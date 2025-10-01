@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LAKSHMI SOLAR ENERGY</title>
+
+  <!-- ✅ SEO META TAGS -->
+  <meta name="description" content="Lakshmi Solar Energy - Affordable solar panels, inverters, batteries in Vijayawada & Andhra Pradesh. Save money with clean energy." />
+  <meta name="keywords" content="Solar Panels, Solar Inverters, Solar Batteries, Vijayawada Solar, Lakshmi Solar Energy" />
+  <meta name="author" content="Lakshmi Solar Energy" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    :root {
+      --primary: #0ea5e9;
+      --primary-dark: #0369a1;
+      --accent: #f59e0b;
+      --bg: #0b1020;
+      --card: #111936;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial;
+      background: linear-gradient(180deg, #0b1020 0%, #0b1020 60%, #0f172a 100%);
+      color: var(--text);
+    }
+    a { color: inherit; text-decoration: none; }
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: saturate(140%) blur(8px);
+      background: rgba(11, 16, 32, 0.6);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-wrap { max-width:1100px; margin:0 auto; padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-grow:1;}
+    .brand { font-weight:800; letter-spacing:0.3px; font-size:18px;}
+    .brand span { color: var(--accent);}
+    .nav-links a { margin:0 10px; color: var(--muted);}
+    .nav-links a:hover { color:#fff;}
+    .lang-toggle button {
+      background: transparent; border:none; color: var(--muted); font-weight:700; cursor:pointer; font-size:1rem;
+      padding:6px 10px; border-radius:6px;
+    }
+    .lang-toggle button:hover, .lang-toggle button.active {
+      background: var(--primary); color:#031625;
+    }
+    .hero { max-width:1100px; margin:0 auto; padding:56px 16px 28px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:28px;}
+    .hero h1 { font-size:44px; line-height:1.1; margin:0 0 14px;}
+    .hero p { color: var(--muted); margin:0 0 24px;}
+    .cta-row { display:flex; gap:12px; flex-wrap:wrap;}
+    .btn { padding:12px 18px; border-radius:12px; font-weight:700; border:1px solid transparent; display:inline-flex; align-items:center; gap:8px; cursor:pointer;}
+    .btn-primary { background: var(--primary); color:#031625;}
+    .btn-primary:hover { background: var(--primary-dark); color:#eaf6ff;}
+    .btn-ghost { border-color: rgba(255,255,255,0.18); color:#fff;}
+    .btn-ghost:hover { background: rgba(255,255,255,0.06);}
+    .hero-card { background: linear-gradient(180deg, #0c2034 0%, #0a1530 100%); border:1px solid rgba(255,255,255,0.08); border-radius:18px; padding:16px; display:grid; gap:12px;}
+    .hero-card img { width:100%; height:220px; object-fit:cover; border-radius:14px;}
+    .section { max-width:1100px; margin:0 auto; padding:32px 16px;}
+    .section h2 { margin:0 0 18px; font-size:30px;}
+    .muted { color: var(--muted);}
+    .features { display:grid; grid-template-columns:repeat(4,1fr); gap:14px;}
+    .feature { background: var(--card); border:1px solid rgba(255,255,255,0.06); border-radius:14px; padding:16px; display:grid; gap:6px;}
+    .badge { display:inline-block; font-weight:800; font-size:12px; color:#031625; background: var(--accent); padding:6px 10px; border-radius:999px;}
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+    .card { background: var(--card); border:1px solid rgba(255,255,255,0.06); border-radius:16px; overflow:hidden; display:grid;}
+    .card img { width:100%; height:180px; object-fit:cover;}
+    .card .body { padding:14px;}
+    .pill { display:inline-block; font-size:12px; color: var(--text); border:1px solid rgba(255,255,255,0.16); padding:4px 10px; border-radius:999px;}
+    .reviews { display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+    .quote { background: linear-gradient(180deg, #0d1835 0%, #0a1530 100%); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:16px;}
+    .contact-wrap { display:grid; grid-template-columns:1fr; gap:20px;}
+    iframe { width:100%; height:100%; min-height:340px; border:0; border-radius:16px;}
+    footer { margin-top:28px; background:#0a1225; border-top:1px solid rgba(255,255,255,0.06); color: var(--muted); text-align:center; padding:18px; position:relative;}
+    .social-icons { margin-top:8px;}
+    .social-icons a { color: var(--muted); margin:0 8px; font-size:24px; transition:color 0.3s ease; text-decoration:none; display:inline-block;}
+    .social-icons a:hover { color: var(--primary);}
+    .fab { position:fixed; right:16px; bottom:16px; display:grid; gap:10px; z-index:60;}
+    .fab a { background: var(--primary); color:#031625; padding:12px 14px; border-radius:999px; font-weight:800; border:1px solid rgba(255,255,255,0.2); text-align:center; font-size:18px; line-height:1; text-decoration:none;}
+    .fab a:nth-child(2) { background:#22c55e;}
+    .fab a:nth-child(3) { background:#3b82f6;}
+    .fab a:hover { filter: brightness(0.92);}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:36px;}.features{grid-template-columns:repeat(2,1fr);}.grid{grid-template-columns:1fr 1fr;}.reviews{grid-template-columns:1fr;}.contact-wrap{grid-template-columns:1fr;}}
+    @media(max-width:520px){.grid{grid-template-columns:1fr;}.features{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="nav">
+    <div class="nav-wrap">
+      <div class="brand">LAKSHMI <span>SOLAR ENERGY</span></div>
+      <div class="nav-links">
+        <a class="link" href="#home">Home</a>
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#products">Products</a>
+        <a class="link" href="#contact">Contact</a>
+      </div>
+      <div class="lang-toggle">
+        <button class="active" onclick="setLang('en')">EN</button>
+        <button onclick="setLang('te')">తెలుగు</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div>
+      <h1 id="hero-title">Powering a Brighter Future with Clean Solar Energy</h1>
+      <p id="hero-text">Lakshmi Solar Energy delivers affordable, smart, and sustainable solar solutions for homes and businesses.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary" id="quote-btn">Get a Quote</a>
+        <a href="#products" class="btn btn-ghost" id="explore-btn">Explore Products</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" alt="Solar Energy Panels" loading="lazy" />
+      <div>
+        <span class="badge">Trusted by 1000+ Families</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 id="about-title">Why Choose Us?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>⚡ Reliable</h3>
+        <p class="muted">High efficiency solar panels with long warranties.</p>
+      </div>
+      <div class="feature">
+        <h3>🌍 Sustainable</h3>
+        <p class="muted">Environmentally responsible clean energy.</p>
+      </div>
+      <div class="feature">
+        <h3>💰 Cost Effective</h3>
+        <p class="muted">Lower your electricity bills with solar power.</p>
+      </div>
+      <div class="feature">
+        <h3>🤝 Expert Support</h3>
+        <p class="muted">Dedicated team for installation & service.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section">
+    <h2 id="products-title">Our Products</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1560958089-b8a169f94a72" alt="Solar Panels" loading="lazy"/>
+        <div class="body">
+          <h3>Solar Panels</h3>
+          <p class="muted">High-efficiency panels for homes and businesses.</p>
+          <span class="pill">25-year warranty</span><br><br>
+          <a href="#contact" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1611262588024-d12430b7c00b" alt="Solar Inverter" loading="lazy"/>
+        <div class="body">
+          <h3>Solar Inverters</h3>
+          <p class="muted">Advanced inverters to maximize energy output.</p>
+          <span class="pill">Smart monitoring</span><br><br>
+          <a href="#contact" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de" alt="Battery Storage" loading="lazy"/>
+        <div class="body">
+          <h3>Solar Batteries</h3>
+          <p class="muted">Store excess power for night and backup use.</p>
+          <span class="pill">Reliable storage</span><br><br>
+          <a href="#contact" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews">
+      <div class="quote">“Lakshmi Solar Energy helped us save 70% on our bills. Fantastic service!”<br />– nageswararao ch.</div>
+      <div class="quote">“Reliable products and a professional team. Highly recommended.”<br />– durgarao p.</div>
+      <div class="quote">“Clean energy and peace of mind. The installation was seamless.”<br />– prasad s.</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-wrap">
+      <a href="https://wa.me/9642278752?text=Hello,%20I%20want%20to%20enquire%20about%20Lakshmi%20Solar%20Energy%20products"
+         target="_blank"
+         class="btn btn-primary"
+         style="padding:16px; font-size:18px; border-radius:12px; text-align:center; display:inline-block; margin-bottom:20px;">
+         Send Message via WhatsApp
+      </a>
+
+      <a href="mailto:lakshmisolarenergy@gmail.com" class="btn btn-ghost" style="padding:16px; font-size:18px; text-align:center;">
+        ✉ Email Us
+      </a>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.217349306211!2d80.62685951506169!3d16.52232968817765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35ef3abfcd553f%3A0x8ed2b18d4c5644a5!2sLakshmi%20Solar%20Energy!5e0!3m2!1sen!2sin!4v1693223978747!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Lakshmi Solar Energy. All Rights Reserved.
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/19Ghhgc8uC/" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://youtube.com/@lsevja?si=_PIR7Tcd0jQs7yxk" target="_blank" class="fa fa-youtube"></a>
+      <a href="https://www.instagram.com/lakshmi_solar_energy/" target="_blank" class="fa fa-instagram"></a>
+    </div>
+  </footer>
+
+  <!-- FAB CONTACT -->
+  <div class="fab">
+    <a href="tel:9642278752" aria-label="Call">📞</a>
+    <a href="https://wa.me/9642278752" aria-label="WhatsApp">💬</a>
+    <a href="https://m.me/yourpage" aria-label="Messenger">✉️</a>
+  </div>
+
+  <!-- ✅ LANGUAGE SWITCH SCRIPT -->
+  <script>
+    const texts = {
+      en: {
+        heroTitle: "Powering a Brighter Future with Clean Solar Energy",
+        heroText: "Lakshmi Solar Energy delivers affordable, smart, and sustainable solar solutions for homes and businesses.",
+        quoteBtn: "Get a Quote",
+        exploreBtn: "Explore Products",
+        aboutTitle: "Why Choose Us?",
+        productsTitle: "Our Products"
+      },
+      te: {
+        heroTitle: "శుభ్రమైన సౌర శక్తితో ప్రకాశవంతమైన భవిష్యత్తు",
+        heroText: "లక్ష్మి సోలార్ ఎనర్జీ - ఇళ్లకు మరియు వ్యాపారాలకు సరసమైన, స్మార్ట్, స్థిరమైన సోలార్ సొల్యూషన్స్ అందిస్తుంది.",
+        quoteBtn: "కొటేషన్ పొందండి",
+        exploreBtn: "ఉత్పత్తులు చూడండి",
+        aboutTitle: "ఎందుకు మమ్మల్ని ఎంచుకోవాలి?",
+        productsTitle: "మా ఉత్పత్తులు"
+      }
+    };
+
+    function setLang(lang) {
+      document.getElementById("hero-title").innerText = texts[lang].heroTitle;
+      document.getElementById("hero-text").innerText = texts[lang].heroText;
+      document.getElementById("quote-btn").innerText = texts[lang].quoteBtn;
+      document.getElementById("explore-btn").innerText = texts[lang].exploreBtn;
+      document.getElementById("about-title").innerText = texts[lang].aboutTitle;
+      document.getElementById("products-title").innerText = texts[lang].productsTitle;
+
+      // Toggle active button
+      document.querySelectorAll(".lang-toggle button").forEach(btn => btn.classList.remove("active"));
+      document.querySelectorAll(".lang-toggle button")[lang === "en" ? 0 : 1].classList.add("active");
+    }
+  </script>
+</body>
+</html>
